@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="admin.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="bgimg">
+    <nav class="navbar">
+        <div class="container-fluid ">
+            <h1 id="nav" class="display-1 py-3 d-inline-block ">Abid son's
+            </h1>
+            <div class="text-end my-md-5">
+                <button class="btn btn-light" onclick="back()">BACK</button>
+                <button class="btn btn-light" onclick="resetp()">Reset password</button>
+            </div>
+        </div>
+    </nav>
+    <div class="product ">
+        <div class="procolor text-center pt-5 ">
+
+            <h1 class="text-white mb-5 display-2">Add product</h1>
+            <form>
+                <div>
+                    <input type="text" name="" id="ProductName" placeholder="Product Name" class="inpad my-2 py-3">
+                </div>
+                <div>
+                    <input type="number" name="" id="ProductPrice" placeholder="Product Price" class="inpad my-2 py-3">
+                </div>
+                <div>
+                    <input type="url" name="" id="ImageUrl" class="inpad my-2 py-3" placeholder="Image Url">
+                </div>
+                <div>
+                    <textarea name="" id="ProductDescription" cols="12" rows="3"  placeholder="Product Description" class="inpad my-2 py-3"></textarea>
+                </div>
+            </form>
+            
+            <div class="btn">
+                <!-- <button onclick="addpro()" class="btnad">Add Product</button> -->
+                <button class="btn btn-light mb-5" onclick="addpro()">Add Product</button>
+            </div>
+            
+
+        </div>
+    </div>
+  <hr>
+    <div class="product d-flex justify-content-evenly flex-wrap my-5" id="admindata">
+        
+    </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="admin.js" type="module"></script>
+</body>
+
+</html>
